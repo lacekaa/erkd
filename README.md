@@ -1,13 +1,18 @@
-# EmotionRecognitionKeystrokeDynamics
-Emotion Recognition through keystroke dynamics in Pyhon
+This Project is contains the following parts:
+1. Emotion Recognition through keystroke dynamics extending the work from EmotionRecognitionKeystrokeDynamics
+2. Demographic prediction from keystroke dynamics
+3. keystroke dynamics generator (by reading keystrokes)
 
-In this work, we will, therefore, explore the classification task of emotion recognition through keystroke dynamics, as well as evaluate whether including demographic information (age, gender, educatoin level, typing habits, etc.) is appropriate for this task. Inspired by previous works on this task, we will also introduce a new feature based on edit distances to capture the number of typos in typed text and assess if this feature is relevant and helpful for our task.
+Regarding project 1:
+There are the following jupyter notebooks:[data_analysis_fixed_text.ipynb](data_analysis_fixed_text.ipynb), [data_analysis_free_text.ipynb](data_analysis_free_text.ipynb)
+and the following folders: [data](data)
 
-The contributions of this work are the following:
-- We explore the emotion recognition task through keystroke dynamics and show that we can identify people's emotional states thanks to features extracted from keyboards. We also compare different experiment and classification settings and demonstrate that we achieve the best performance for fixed-text experiments, with XGBoost or SVM models.
-- We introduce a new feature based on edit distances to capture the number of typos in typed text and show that this feature is valuable and helps improve classification results.
-- We investigate whether demographic information on participants helps improve performance, and find that some of them are beneficial for our task. The others should be filtered out thanks to feature selection methods.
 
-Details about this work can be found in my report, available in this GitHub repository.
+Regarding project 2:
+There are the following jupyter notebooks: [age_prediction.ipynb](age_prediction.ipynb), [demographic_recognition.ipynb](demographic_recognition.ipynb),
+[gender_prediction.ipynb](gender_prediction.ipynb), [merge_metadata_analysis.ipynb](merge_metadata_analysis.ipynb),
+[metadata_generator.ipynb](metadata_generator.ipynb) and the corresponding folders: [demographics_csv](demographics_csv), [samples](samples)
 
-The *EmoSurv* dataset in available on IEEE website and must be used according to the license granted by its authors: https://ieee-dataport.org/open-access/emosurv-typing-biometric-keystroke-dynamics-dataset-emotion-labels-created-using
+
+Regarding project 3:
+Contains one folder: [keystrokes_reader_project](keystrokes_reader_project)
